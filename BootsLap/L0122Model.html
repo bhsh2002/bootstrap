@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Embedding Bootstrap -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest Compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- End of Embedding -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            carousel-inner > .item > img {
+                width: 80%;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <!--
+        data-toggle: It is used when you want to hide a section and make it appear only when a div is clicked
+        data-target: it is an attribute should contain a CSS selector that points to the HTML Element that will be changed
+        data-dismiss:  finding the elements that have the attribute of data-dismiss and the value of modal
+    -->
+    <body>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal1">Launch Modal</button>
+            <div class="modal fade" id="Modal1">
+                <div class="modal-dialog">
+                    <!-- Modal content--> 
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Header</h4> 
+                        </div> 
+                        <div class="modal-body">
+                            <p>Content</p> 
+                        </div>
+                        <div class= "modal-footer">
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">close</button> 
+                    </div> 
+                </div>
+            </div>
+        </div>      
+    </body>
+</html>
